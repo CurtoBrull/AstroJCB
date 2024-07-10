@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import astro from '../assets/img/astro.svg';
+---
+
+<footer>
+	<a href='#inicio' class='arriba' aria-label='Botón para volver al inicio de la web'>
+		<i class='fa-solid fa-angles-up'></i>
+	</a>
+	<div class='redes'>
+		<a href='https://www.linkedin.com/in/javier-curto-brull/' aria-label='Linkedin link' target='_blank'
+			><i class='fa-brands fa-linkedin-in'></i></a
+		>
+		<a href='https://x.com/JvrCrtB' aria-label='X link' target='_blank'><i class='fa-brands fa-twitter'></i></a>
+		<a href='https://github.com/CurtoBrull' aria-label='Github link' target='_blank'
+			><i class='fa-brands fa-github'></i></a
+		>
+	</div>
+	<p id='copyright'></p>
+	<p class='astro'>
+		Desarrollado con
+		<a href='https://astro.build' target='_blank' aria-label='Astro link'>
+			<Image src={astro} alt='Astro' class='astro-icon' />
+		</a>
+	</p>
+</footer>
+
+<script>
+	const fecha = new Date();
+	const anio = fecha.getFullYear();
+	const copyright = document.getElementById('copyright');
+	if (copyright !== null) {
+		copyright.textContent = `© Javier Curto Brull - ${anio}`;
+	}
+</script>
+
+<style>
+	footer {
+		background-color: #252a2e;
+		color: #fff;
+		padding: 50px 0 30px 0;
+		text-align: center;
+		position: relative;
+		width: 100%;
+	}
+
+	footer .redes {
+		margin-bottom: 20px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	footer .arriba {
+		display: block;
+		width: 50px;
+		height: 50px;
+		background-color: var(--baseColor);
+		color: #fff;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -25px;
+		border-radius: 50%;
+		line-height: 50px;
+		font-size: 18px;
+	}
+
+	footer .astro {
+		margin-top: 20px;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	footer .astro-icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media (max-width: 768px) {
+		.redes {
+			height: fit-content;
+		}
+	}
+</style>

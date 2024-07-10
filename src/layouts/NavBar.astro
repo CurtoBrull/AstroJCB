@@ -1,0 +1,123 @@
+---
+
+---
+
+<div class='contenedor-header'>
+	<header>
+		<div class='logo'>
+			<a href='#inicio'>Javier Curto</a>
+		</div>
+		<nav id='nav'>
+			<ul>
+				<li><a href='#inicio' onclick='seleccionar()'>INICIO</a></li>
+				<li><a href='#sobremi' onclick='seleccionar()'>SOBRE MI</a></li>
+				<li><a href='#skills' onclick='seleccionar()'>SKILLS</a></li>
+				<li><a href='#curriculum' onclick='seleccionar()'>CURRICULUM</a></li>
+				<li><a href='#portfolio' onclick='seleccionar()'>PORTFOLIO</a></li>
+				<li><a href='#contacto' onclick='seleccionar()'>CONTACTO</a></li>
+			</ul>
+		</nav>
+		<div class='nav-responsive' onclick='mostrarOcultarMenu()'>
+			<i class='fa-solid fa-bars'></i>
+		</div>
+	</header>
+</div>
+
+<style>
+	.contenedor-header {
+		background: #1e2326;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 99;
+	}
+
+	.contenedor-header header {
+		max-width: 95%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+	}
+
+	.contenedor-header header .logo a {
+		font-family: 'Righteous', serif;
+		font-size: 36px;
+		color: var(--baseColor);
+		text-decoration: none;
+	}
+
+	.contenedor-header header ul {
+		display: flex;
+		list-style: none;
+	}
+
+	.contenedor-header header nav ul li a {
+		color: #fff;
+		margin: 0 15px;
+		padding: 3px;
+		transition: 0.5s;
+		text-decoration: none;
+	}
+
+	.contenedor-header header nav ul li a:hover {
+		color: var(--baseColor);
+	}
+
+	.nav-responsive {
+		background-color: var(--baseColor);
+		color: #fff;
+		padding: 5px 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		display: none;
+	}
+
+	@media (max-width: 768px) {
+		.contenedor-header header nav ul {
+			display: none;
+			flex-direction: column;
+			background-color: #1e2326;
+			position: absolute;
+			top: -10px;
+			right: 10px;
+			width: 100%;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+			box-shadow: 0 0 6px var(--baseColor);
+		}
+		.contenedor-header header nav ul li {
+			margin: 0;
+			padding: 10px;
+			border-bottom: none;
+		}
+		.nav-responsive {
+			display: block;
+		}
+	}
+</style>
+
+<script>
+	let menuVisible = false;
+
+	function mostrarOcultarMenu() {
+		const navElement = document.getElementById('nav');
+		if (navElement) {
+			navElement.classList.toggle('responsive');
+		}
+		menuVisible = !menuVisible;
+	}
+	(window as any).mostrarOcultarMenu = mostrarOcultarMenu;
+
+	function seleccionar() {
+		const navElement = document.getElementById('nav');
+		if (navElement) {
+			navElement.classList.remove('responsive');
+		}
+		menuVisible = false;
+	}
+	(window as any).seleccionar = seleccionar;
+</script>

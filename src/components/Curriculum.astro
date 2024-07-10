@@ -1,0 +1,272 @@
+<section id='curriculum' class='curriculum'>
+	<div class='contenido-seccion'>
+		<h2>Currículum</h2>
+		<div class='fila'>
+			<div class='col izquierda'>
+				<h3>Educación</h3>
+				<div class='item izq'>
+					<h4>CFGS Desarrollo de Aplicaciones Web</h4>
+					<span class='casa'>IES La Puebla</span>
+					<span class='fecha'>2020-Actual</span>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>JQuery</li>
+						<li>BootStrap</li>
+						<li>Bases de Datos</li>
+						<li>Administración de Redes</li>
+					</ul>
+					<div class='conectori'>
+						<div class='circuloi'></div>
+					</div>
+				</div>
+				<div class='item izq'>
+					<h4>CFGM Técnico de Sistemas Microinformáticos y Redes</h4>
+					<span class='casa'>IES La Puebla</span>
+					<span class='fecha'>2018-2020</span>
+					<div class='conectori'>
+						<div class='circuloi'></div>
+					</div>
+				</div>
+			</div>
+
+			<div class='col derecha'>
+				<h3>Experiencia de trabajo</h3>
+				<div class='item item1 der'>
+					<h4>Desarrollador Backend Spring</h4>
+					<span class='casa'>NTT Data</span>
+					<span class='fecha'>Feb 2023 - Acualidad</span>
+					<ul>
+						<li>Java</li>
+						<li>Spring</li>
+						<li>Programación Funcional</li>
+						<li>Servicios API REST</li>
+						<li>DB2</li>
+						<li>MongoDB</li>
+						<li>SQL</li>
+						<li>Postman</li>
+					</ul>
+					<div class='conectord'>
+						<div class='circulod'></div>
+					</div>
+				</div>
+
+				<div class='item der'>
+					<h4>Prácticas - Formación en Desarrollo Backend Java Spring</h4>
+					<span class='casa'>NTT Data</span>
+					<span class='fecha'>Oct-Dic 2022</span>
+					<ul>
+						<li>Java 8</li>
+						<li>Spring</li>
+						<li>Programación Funcional</li>
+						<li>Servicios API REST</li>
+						<li>DB2</li>
+					</ul>
+					<div class='conectord'>
+						<div class='circulod'></div>
+					</div>
+				</div>
+
+				<div class='item der'>
+					<h4>Militar Profesional</h4>
+					<span class='casa'>Ministerio de Defensa</span>
+					<span class='fecha'>1998 - Feb 2023</span>
+					<ul>
+						<li>Gestión de equipos informáticos</li>
+						<li>Gestión de usuarios de dichos equipos</li>
+						<li>Mantenimiento de equipos informáticos</li>
+						<li>Realización de tareas administrativas</li>
+						<li>Atención al público</li>
+					</ul>
+					<div class='conectord'>
+						<div class='circulod'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.curriculum {
+		background-color: #1e2326;
+		color: #fff;
+		padding: 50px 20px;
+	}
+
+	.curriculum .contenido-seccion {
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	.curriculum h2 {
+		font-size: 48px;
+		font-family: 'Righteous', serif;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.curriculum .fila {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.curriculum .fila .col {
+		width: 49%;
+		padding: 0 20px;
+	}
+
+	.curriculum .fila .col h3 {
+		font-size: 28px;
+		font-family: 'Righteous', serif;
+		margin-bottom: 25px;
+	}
+
+	.curriculum .fila .izquierda {
+		border-right: 2px solid #252a2e;
+	}
+
+	.curriculum .fila .derecha {
+		border-left: 2px solid #252a2e;
+	}
+
+	.curriculum .fila .item {
+		padding: 25px;
+		margin-bottom: 30px;
+		background-color: #252a2e;
+		position: relative;
+	}
+
+	.curriculum .fila .item h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.curriculum .fila .item .casa {
+		color: var(--baseColor);
+		font-size: 22px;
+		font-weight: bold;
+		display: block;
+	}
+
+	.curriculum .fila .item .fecha {
+		display: block;
+		color: var(--baseColor);
+		margin-bottom: 10px;
+	}
+
+	.curriculum .fila .item p {
+		line-height: 24px;
+	}
+
+	.curriculum .fila .izq {
+		border-right: 2px solid var(--baseColor);
+		margin-right: 20px;
+	}
+
+	.curriculum .fila .der {
+		border-left: 2px solid var(--baseColor);
+		margin-left: 20px;
+	}
+
+	.curriculum .fila .item .conectori {
+		height: 2px;
+		background-color: var(--baseColor);
+		width: 47px;
+		position: absolute;
+		top: 50%;
+		right: -47px;
+		z-index: 5;
+	}
+
+	.curriculum .fila .item .conectori .circuloi {
+		display: block;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background-color: var(--baseColor);
+		float: right;
+		position: relative;
+		bottom: 4px;
+	}
+
+	.curriculum .fila .item .conectord {
+		height: 2px;
+		background-color: var(--baseColor);
+		width: 47px;
+		position: absolute;
+		top: 20%;
+		left: -47px;
+		z-index: 5;
+	}
+
+	.curriculum .fila .item1 .conectori {
+		top: 10%;
+	}
+
+	.curriculum .fila .item .conectord .circulod {
+		display: block;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background-color: var(--baseColor);
+		float: left;
+		position: relative;
+		bottom: 4px;
+	}
+
+	@media (max-width: 768px) {
+		.curriculum .fila {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.curriculum .fila .col {
+			width: 100%;
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		.curriculum .fila .izquierda,
+		.curriculum .fila .derecha {
+			border: none;
+		}
+
+		.curriculum .fila .derecha {
+			margin-left: 0;
+		}
+
+		.curriculum .fila .item .conectori,
+		.curriculum .fila .item .conectord {
+			display: none;
+		}
+
+		.curriculum .fila .izq, 
+		.curriculum .fila .der {
+			margin-left: 0;
+			margin-right: 0;
+			border: none;
+		}
+	}
+
+	@media (max-width: 425px) {
+		.curriculum .fila {
+			flex-direction: column;
+			align-items: center;
+			
+		}
+
+		.curriculum .fila .col {
+			width: 100%;
+			padding: 0 5px;
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			text-align: center;
+		}
+	}
+</style>

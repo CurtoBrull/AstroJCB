@@ -3,49 +3,192 @@ interface Props {
 	title: string;
 }
 
-const { title } = Astro.props;
+import { SITE_DESCRIPTION, SITE_TITLE, ICON } from '../config';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang='es'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<meta charset='UTF-8' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<meta name='description' content={SITE_DESCRIPTION} />
+		<meta name='generator' content={Astro.generator} />
+		<link
+			rel='stylesheet'
+			href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'
+			integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=='
+			crossorigin='anonymous'
+			referrerpolicy='no-referrer'
+		/>
+		<link rel='shortcut icon' href={ICON} type='image/x-icon' />
+		<title>{SITE_TITLE}</title>
+		<script type='text/javascript' is:inline>
+			(function (window, doc, n, t, e, r, _) {
+				window['__GetResponseAnalyticsObject'] = e;
+				window[e] =
+					window[e] ||
+					function () {
+						(window[e].q = window[e].q || []).push(arguments);
+					};
+				r = doc.createElement(n);
+				_ = doc.getElementsByTagName(n)[0];
+				r.async = 1;
+				r.src = t;
+				r.setAttribute('crossorigin', 'use-credentials');
+				_.parentNode.insertBefore(r, _);
+			})(
+				window,
+				document,
+				'script',
+				'https://ga.getresponse.com/script/b8de0533-9ee7-4fb6-b3f9-b1211753528f/ga.js',
+				'GrTracking'
+			);
+		</script>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
+
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		--baseColor: #d19617;
+		--fontColor: #0d2249;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+
+	* {
+		box-sizing: border-box;
+		font-family: 'Work Sans', serif;
+		margin: 0;
+		padding: 0;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	html, body {
+		scroll-behavior: smooth;
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	/* SECCION RESPONSIVE */
+	@media screen and (max-width: 980px) {
+		nav {
+			display: none;
+		}
+
+		.nav-responsive {
+			display: block;
+		}
+
+		nav.responsive {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 75px;
+			background-color: #252a2e;
+			width: 180px;
+		}
+
+		nav.responsive ul {
+			display: block !important;
+		}
+
+		nav.responsive ul li {
+			border-bottom: 1px solid #fff;
+			padding: 10px 0;
+		}
+
+		.contacto .fila {
+			display: block;
+		}
+
+		.contacto .col {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		.sobremi .fila {
+			display: block;
+		}
+
+		.sobremi .fila .col {
+			width: fit-content;
+		}
+
+		.skills .fila {
+			display: block;
+		}
+
+		.skills .fila .col {
+			width: 100%;
+		}
+
+		.skills .fila .col .barra-skill {
+			width: 100%;
+		}
+
+		.curriculum .fila {
+			display: block;
+		}
+
+		.curriculum .fila .col {
+			width: 90%;
+		}
+
+		.curriculum .fila .derecha {
+			margin-left: 20px;
+		}
+
+		.portfolio .galeria {
+			display: block;
+			width: 100%;
+		}
+
+		.portfolio .galeria .proyecto {
+			max-width: 100%;
+		}
+
+		.portfolio .galeria .proyecto img {
+			width: 100%;
+		}
+
+		.contacto .fila {
+			display: block;
+		}
+
+		.contacto .fila .col {
+			width: 100%;
+		}
+
+		.info {
+			opacity: 0;
+		}
+
+		footer {
+			padding: 10px;
+		}
+
+		.redes {
+			margin: 0;
+			height: 120px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.inicio {
+			height: 100vh;
+		}
 	}
 </style>

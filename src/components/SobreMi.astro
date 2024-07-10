@@ -1,0 +1,207 @@
+<section id='sobremi' class='sobremi'>
+	<div class='contenido-seccion'>
+		<h2>Sobre Mí</h2>
+		<p><span>¡Hola! Soy Javier Curto. </span></p>
+		<p>
+			Decidido dar el paso fuera de mi zona de confort, finalmente me embarqué en el fascinante viaje de explorar mi
+			pasión por la informática y la programación. Comencé mi formación con el CFGM de Sistemas Microinformáticos y
+			Redes, y luego continué con el CFGS de Desarrollo de Aplicaciones Web, adentrándome en un mundo apasionante y en
+			constante evolución.
+		</p>
+		<p>
+			Actualmente, cuento con conocimientos en una variedad de tecnologías, incluyendo Java, Spring, HTML, CSS,
+			JavaScript, PHP y JQuery, entre otras. Sin embargo, mi sed de aprendizaje continúa, y estoy siempre en búsqueda de
+			nuevas habilidades y conocimientos.
+		</p>
+		<p>
+			Mi rol actual como Desarrollador Backend con Java Spring en NTT Data, me permite seguir creciendo y
+			perfeccionándome día a día. Actualmente, estoy inmerso en un proyecto para una importante empresa textil, donde
+			gestionamos el almacenamiento en bases de datos, tales como DB2 y MongoDB, de los movimientos de stock en sus
+			tiendas. Este desafío me permite aplicar mis habilidades y conocimientos en un entorno dinámico y exigente,
+			contribuyendo a un proyecto crucial para nuestro cliente.
+		</p>
+		<div class='fila'>
+			<div class='col'>
+				<h3>Datos Personales</h3>
+				<ul>
+					<li><strong>Email</strong> curto.brull.javier@jcurtobr.eu</li>
+					<li><strong>Website</strong><a href='https://jcurtobr.eu/'>jcurtobr.eu</a></li>
+					<li><strong>Vivo en</strong> Huércal de Almería</li>
+					<li><strong>Cargo Actual</strong> <span>Desarrollador Backend Java Spring en NTT Data</span></li>
+				</ul>
+			</div>
+			<div class='col'>
+				<h3>Intereses</h3>
+				<div class='contenedor-intereses'>
+					<div class='interes'><i class='fa-solid fa-computer'></i><span>INFORMÁTICA</span></div>
+					<div class='interes'><i class='fa-solid fa-gamepad'></i><span>JUEGOS</span></div>
+					<div class='interes'><i class='fa-solid fa-headphones'></i><span>MUSICA</span></div>
+					<div class='interes'><i class='fa-solid fa-person-running'></i><span>DEPORTE</span></div>
+				</div>
+			</div>
+		</div>
+		<button id='download-cv' class='btn primary'
+			>Descargar y ver el CV <i class='fa-solid fa-download'></i><span class='overlay'></span></button
+		>
+	</div>
+</section>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const button = document.getElementById('download-cv');
+		if (button) {
+			button.addEventListener('click', function () {
+				const link = document.createElement('a');
+				link.href = '/cv/CV_Javier_Curto_Brull.pdf';
+				link.download = 'CV_Javier_Curto_Brull.pdf';
+				link.click();
+			});
+		}
+	});
+</script>
+
+<style>
+	.sobremi {
+		background-color: #1e2326;
+		color: #fff;
+		padding: 50px 20px;
+	}
+
+	.sobremi .contenido-seccion {
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	.sobremi h2 {
+		font-size: 48px;
+		font-family: 'Righteous', serif;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.sobremi a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.sobremi .contenido-seccion p {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 20px;
+	}
+
+	.sobremi .contenido-seccion p span {
+		color: var(--baseColor);
+		font-weight: bold;
+		font-size: 32px;
+	}
+
+	.sobremi .fila {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.sobremi .fila .col {
+		width: 50%;
+		padding: 0 15px;
+	}
+
+	.sobremi .fila .col h3 {
+		font-size: 28px;
+		font-family: 'Righteous', serif;
+		margin-bottom: 25px;
+		/* centrar */
+		text-align: center;
+	}
+
+	.sobremi .fila .col ul {
+		list-style: none;
+	}
+
+	.sobremi .fila .col ul li {
+		margin: 12px 0;
+	}
+
+	.sobremi .fila .col ul li strong {
+		display: inline-block;
+		color: var(--baseColor);
+	}
+
+	.sobremi .fila .col ul li span {
+		background-color: var(--baseColor);
+		color: var(--fontColor);
+		padding: 4px;
+		font-weight: bold;
+		border-radius: 5px;
+		max-width: fit-content;
+	}
+
+	.sobremi .fila .col .contenedor-intereses {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		justify-content: center;
+	}
+
+	.sobremi .fila .col .contenedor-intereses .interes {
+		width: 115px;
+		height: 100px;
+		background-color: #252a2e;
+		border-radius: 10px;
+		margin: 0 15px 15px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.3s;
+	}
+
+	.sobremi .fila .col .contenedor-intereses .interes:hover {
+		background-color: var(--baseColor);
+	}
+
+	.sobremi .fila .col .contenedor-intereses .interes i {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.sobremi button,
+	.contacto button {
+		cursor: pointer;
+		background-color: transparent;
+		border: 2px solid #fff;
+		width: fit-content;
+		display: block;
+		margin: 20px auto;
+		padding: 10px 22px;
+		font-size: 16px;
+		color: #fff;
+		position: relative;
+		z-index: 10;
+	}
+
+	.sobremi button .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: var(--baseColor);
+		z-index: -1;
+		transition: 1s;
+	}
+
+	.sobremi button:hover .overlay {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.sobremi .fila .col {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.sobremi .fila .col .contenedor-intereses {
+			justify-content: center;
+		}
+	}
+</style>

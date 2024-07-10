@@ -1,0 +1,160 @@
+<section id='contacto' class='contacto'>
+	<div class='contenido-seccion'>
+		<h2>CONTACTO</h2>
+		<div class='fila'>
+			<!-- Formulario -->
+			<form
+				id='form'
+				class='col form'
+				target='_blank'
+				action='https://formsubmit.co/curto.brull.javier@jcurtobr.eu'
+				method='POST'>
+				<input name='name' id='name' type='text' placeholder='Nombre' required />
+				<input name='tel' id='tel' type='text' placeholder='Teléfono' />
+				<input name='email' id='email' type='text' placeholder='Dirección de correo' required />
+				<textarea name='message' id='message' cols='30' rows='10' placeholder='Mensaje' required></textarea>
+				<input type='submit' class='btn primary full test' value='Enviar Mensaje' />
+			</form>
+			<!-- Información de contacto -->
+			<div class='col'>
+				<div class='info'>
+					<ul>
+						<li>
+							<i class='fa-solid fa-signature'></i>
+							Javier Curto Brull
+						</li>
+						<li>
+							<i class='fa-solid fa-location-dot'></i>
+							Huércal de Almería
+						</li>
+						<li>
+							<i class='fa-solid fa-envelope'></i>
+							curto.brull.javier@jcurtobr.eu
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contacto {
+		background-image: url(../img/contact_bg.png);
+		background-color: #1e2326;
+		color: #fff;
+		padding: 50px 0;
+	}
+
+	.contacto .contenido-seccion {
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	.contacto h2 {
+		font-size: 48px;
+		font-family: 'Righteous', serif;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.contacto .fila {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.contacto .col {
+		width: 50%;
+		padding: 10px;
+		position: relative;
+		opacity: 90%;
+	}
+
+	.contacto .col input,
+	.contacto .col textarea {
+		display: block;
+		width: 100%;
+		padding: 18px;
+		border: none;
+		margin-bottom: 20px;
+		background-color: #252a2e;
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.contacto .col input,
+	.contacto .col textarea .test {
+		cursor: pointer;
+		color: var(--baseColor);
+	}
+
+	.contacto button .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: var(--baseColor);
+		z-index: -1;
+		transition: 1s;
+	}
+
+	.contacto button:hover .overlay {
+		width: 100%;
+	}
+
+	.contacto .col img {
+		width: 100%;
+		opacity: 50%;
+		margin-top: 147px;
+	}
+
+	.contacto .col .info {
+		position: absolute;
+		top: 40%;
+		background-color: #252a2e;
+		padding: 10px;
+		max-width: 350px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 90%;
+	}
+
+	.contacto .col .info ul {
+		list-style: none;
+	}
+
+	.contacto .col .info ul li {
+		margin-bottom: 20px;
+	}
+
+	.contacto .col .info ul li i {
+		color: var(--baseColor);
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	@media (max-width: 425px) {
+		.contacto .fila {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.contacto .col {
+			width: 100%;
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		.contacto .col .info {
+			position: relative;
+			top: 0;
+			transform: none;
+			left: 0;
+			margin: auto;
+			padding: 20px;
+			max-width: 100%;
+			text-align: center
+		}
+	}
+</style>

@@ -1,0 +1,154 @@
+<section class='skills' id='skills'>
+	<div class='contenido-seccion'>
+		<h2>Skills</h2>
+		<div class='fila'>
+			<div class='col'>
+				<div class='skill skill-left'>
+					<h3>Technical Skills</h3>
+					<ul>
+						<li><strong>Java: </strong>Mi lenguaje del día a día</li>
+						<li>
+							<strong>Spring: </strong>Experiencia real en proyectos con esteFramework de desarrollo de aplicaciones
+							Java
+						</li>
+						<li><strong>Git y Github: </strong>Experiencia en proyectos con control de versiones</li>
+						<li><strong>SQL: </strong>Manejo de bases de datos relacionales</li>
+						<li><strong>DB2: </strong>Manejo de bases de datos relacionales en proyectos reales</li>
+						<li><strong>MongoDB: </strong>Manejo de bases de datos NoSQL en proyectos reales</li>
+						<li><strong>Postman: </strong>Pruebas de API REST</li>
+						<li><strong>HTML & CSS: </strong>Conocimientos en los fundamentos del diseño web</li>
+						<li>
+							<strong>Javascript: </strong>Conocimientos del lenguaje gracias al ciclo formativo de Desarrollo de
+							Aplicaciones Web
+						</li>
+						<li>
+							<strong>PHP: </strong>Conocimientos del lenguaje gracias al ciclo formativo de Desarrollo de Aplicaciones
+							Web
+						</li>
+						<li>
+							<strong>JQuery: </strong>Conocimientos del lenguaje gracias al ciclo formativo de Desarrollo de
+							Aplicaciones Web
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='skill'>
+					<h3>Professional Skills</h3>
+					<ul>
+						<li><strong>Comunicación:</strong> Habilidad para transmitir ideas de manera efectiva</li>
+						<li><strong>Trabajo en Equipo:</strong> Colaboración efectiva con colegas</li>
+						<li><strong>Dedicación:</strong> Compromiso con la excelencia en el trabajo</li>
+						<li><strong>Gestión del tiempo:</strong> Organización eficiente del tiempo</li>
+						<li><strong>Resolución de problemas:</strong> Capacidad para encontrar soluciones a problemas</li>
+						<li><strong>Adaptabilidad:</strong> Capacidad para adaptarme a diferentes situaciones.</li>
+						<li><strong>Autoaprendizaje:</strong> Capacidad para aprender por mi cuenta</li>
+						<li><strong>Desarrollo Ágil:</strong> Experiencia en metodologías ágiles como SCRUM</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.skills {
+		background-color: #252a2e;
+		color: #fff;
+		padding: 50px 20px;
+	}
+
+	.skills .contenido-seccion {
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	.skills h2 {
+		font-size: 48px;
+		font-family: 'Righteous', serif;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.skills .fila {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.skills .fila .col {
+		width: 50%;
+		padding: 0 20px;
+	}
+
+	.skills .fila .col h3 {
+		font-size: 28px;
+		font-family: 'Righteous', serif;
+		margin-bottom: 25px;
+	}
+
+	.skills .skill > span {
+		font-weight: bold;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.skills .skill ul li {
+		margin-bottom: 10px;
+	}
+
+	.skills .skill .barra-skill {
+		height: 8px;
+		width: 80%;
+		background-color: #131517;
+		position: relative;
+		margin-bottom: 30px;
+		color: var(--fontColor);
+		font-weight: bold;
+	}
+
+	.skills .skill .progreso {
+		background-color: var(--baseColor);
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
+	}
+
+	.skills .skill .barra-skill span {
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		background-color: var(--baseColor);
+		border-radius: 50px;
+		line-height: 40px;
+		text-align: center;
+		top: -17px;
+		right: -15px;
+		font-size: 14px;
+	}
+
+	.skill-left {
+		border-right: #ccdff0 1px solid;
+	}
+
+	strong {
+		color: var(--baseColor);
+	}
+
+	@media (max-width: 425px) {
+		.skills .fila {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.skills .fila .col {
+			width: 100%;
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		.skill-left {
+			border-right: none;
+		}
+	}
+</style>
