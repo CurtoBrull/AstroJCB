@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import p1 from '../assets/img/p1.jpg';
-import API_SPRING from '../assets/img/API_SPRING.webp';
+import webJCB from '../assets/img/webAstroJCB.webp';
+import apiSpring from '../assets/img/API_SPRING.webp';
 import astro from '../assets/img/astro.svg';
 ---
 
@@ -9,31 +9,29 @@ import astro from '../assets/img/astro.svg';
 	<div class='contenido-seccion'>
 		<h2>PORTFOLIO</h2>
 		<p class='portfolio-text'>¡Echa un vistazo a algunos de mis proyectos anteriores y actuales!</p>
-		<p class='astro-text'>Este portfolio ha sido desarrollado con 
+		<p class='astro-text'>
+			Este portfolio ha sido desarrollado con
 			<Image src={astro} alt='Astro' class='astro-icon' width='30' loading='eager' />
 		</p>
 		<div class='galeria'>
 			<div class='proyecto'>
-				<a href='https://curtobrull.github.io/Web-Personal-Simple/' target='_blank'>
-					<Image src={p1} alt='Imágen del proyecto web personal simple' width='300' loading='eager' />
+				<a href='https://github.com/CurtoBrull/AstroJCB' target='_blank'>
+					<Image src={webJCB} alt='Imágen del proyecto web personal Astro' width='300' loading='eager' />
 					<div class='overlay'>
-						<h3>Web Personal Simple</h3>
-						<p>Web usando solo HTML, CSS y JS</p>
+						<h3>Web Personal</h3>
+						<p>Web realizada con el framework ASTRO</p>
 					</div>
 				</a>
 				<hr />
-				<h4>Web personal</h4>
-				<p>
-					Web muy simple para realizada solamente con HTML, CSS y un poco de JavaScript donde mostrar mis proyectos,
-					habilidades y contacto.
-				</p>
+				<h4>Web personal ASTRO</h4>
+				<p>Web simple utilizando ASTRO donde mostrar mis proyectos, habilidades y datos de contacto.</p>
 			</div>
 			<div class='proyecto'>
 				<a href='https://github.com/CurtoBrull/Spring-crud-jpa' target='_blank'>
-					<Image src={API_SPRING} alt='Imagen del proyecto API Spring JPA' width='300' loading='eager' />
+					<Image src={apiSpring} alt='Imagen del proyecto API Spring JPA' width='300' loading='eager' />
 					<div class='overlay'>
 						<h3>API con Spring JPA</h3>
-						<p>Sencilla app para almacenar y consultar productos mediante API</p>
+						<p>Aplicación básica para gestionar y consultar productos a través de una API</p>
 					</div>
 				</a>
 				<hr />
@@ -89,6 +87,7 @@ import astro from '../assets/img/astro.svg';
 
 	.portfolio .galeria .proyecto img {
 		width: 100%;
+		height: 250px;
 		display: block;
 	}
 
