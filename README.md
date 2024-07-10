@@ -1,4 +1,15 @@
-# Astro Starter Kit: Basics
+# Personal Web Page
+
+This is my personal web page. It is built using [Astro](https://astro.build/), a new static site generator that is built with modern web technologies in mind.
+
+Using components and layouts, I have created a simple web page that showcases my projects and my resume. The web page is hosted on [jcurtobr.eu](https://jcurtobr.eu/).
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at [curto.brull.javier@jcurtobr.eu](mailto:curto.brull.javier@jcurtobr.eu).
+
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
@@ -7,8 +18,6 @@ npm create astro@latest -- --template basics
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
@@ -49,6 +58,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Want to learn more about Astro?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
