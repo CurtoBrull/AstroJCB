@@ -1,7 +1,7 @@
 {
   "name": "astrojcb",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.8.3",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.11.5",
+    "astro": "^4.12.3",
     "astro-robots-txt": "^1.0.0",
     "tailwindcss": "^3.4.4",
     "tailwindcss-animated": "^1.0.1",
