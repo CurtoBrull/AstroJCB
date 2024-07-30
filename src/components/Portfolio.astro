@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import webJCB from '../assets/img/webAstroJCB.webp';
 import apiSpring from '../assets/img/API_SPRING.webp';
 import astro from '../assets/img/astro.svg';
+import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 ---
 
 <section id='portfolio' class='portfolio'>
@@ -39,6 +40,20 @@ import astro from '../assets/img/astro.svg';
 				<p>
 					Todo backend debe saber crear APIS, CRUDs, etc. <br /> En este pequeño proyecto he usado Spring JPA para crear
 					unos pocos endpoints para consultar y almacenar datos de productos.
+				</p>
+			</div>
+			<div class='proyecto'>
+				<a href='https://github.com/CurtoBrull/clientOauth' target='_blank'>
+					<Image src={postmanPostCode} alt='Imagen del proyecto API Spring Oauth app' width='300' loading='eager' />
+					<div class='overlay'>
+						<h3>OAuth2 con Spring Security</h3>
+						<p>En este proyecto, he aprendido a usar OAuth2 con Spring Security para autenticar y autorizar a los usuarios en una aplicación Spring Boot.</p>
+					</div>
+				</a>
+				<hr />
+				<h4>OAuth2 con Spring Security</h4>
+				<p>
+					En este proyecto, he aprendido a usar OAuth2 con Spring Security para autenticar y autorizar a los usuarios en una aplicación Spring Boot.
 				</p>
 			</div>
 		</div>
