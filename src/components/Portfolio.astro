@@ -4,6 +4,7 @@ import webJCB from '../assets/img/webAstroJCB.webp';
 import apiSpring from '../assets/img/API_SPRING.webp';
 import astro from '../assets/img/astro.svg';
 import postmanPostCode from '../assets/img/postmanPOSTCode.png';
+import gitHubUserDetails from '../assets/img/GitHubUserDetails.png';
 ---
 
 <section id='portfolio' class='portfolio'>
@@ -15,9 +16,10 @@ import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 			<Image src={astro} alt='Astro' class='astro-icon' width='30' loading='lazy' />
 		</p>
 		<div class='galeria'>
+			<!-- Proyecto 1: Web Personal ASTRO -->
 			<div class='proyecto'>
 				<a href='https://github.com/CurtoBrull/AstroJCB' target='_blank'>
-					<Image src={webJCB} alt='Imágen del proyecto web personal Astro' width='300' loading='eager' />
+					<Image src={webJCB} alt='Imágen del proyecto web personal Astro' width='300' loading='lazy' />
 					<div class='overlay'>
 						<h3>Web Personal</h3>
 						<p>Web realizada con el framework ASTRO</p>
@@ -28,8 +30,9 @@ import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 				<p>Web simple utilizando ASTRO donde mostrar mis proyectos, habilidades y datos de contacto.</p>
 			</div>
 			<div class='proyecto'>
+				<!-- Proyecto 2: API Spring JPA -->
 				<a href='https://github.com/CurtoBrull/Spring-crud-jpa' target='_blank'>
-					<Image src={apiSpring} alt='Imagen del proyecto API Spring JPA' width='300' loading='eager' />
+					<Image src={apiSpring} alt='Imagen del proyecto API Spring JPA' width='300' loading='lazy' />
 					<div class='overlay'>
 						<h3>API con Spring JPA</h3>
 						<p>Aplicación básica para gestionar y consultar productos a través de una API</p>
@@ -43,8 +46,9 @@ import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 				</p>
 			</div>
 			<div class='proyecto'>
+				<!-- Proyecto 3: OAuth2 con Spring Security -->				
 				<a href='https://github.com/CurtoBrull/clientOauth' target='_blank'>
-					<Image src={postmanPostCode} alt='Imagen del proyecto API Spring Oauth app' width='300' loading='eager' />
+					<Image src={postmanPostCode} alt='Imagen del proyecto API Spring Oauth app' width='300' loading='lazy' />
 					<div class='overlay'>
 						<h3>OAuth2 con Spring Security</h3>
 						<p>En este proyecto, he aprendido a usar OAuth2 con Spring Security para autenticar y autorizar a los usuarios en una aplicación Spring Boot.</p>
@@ -54,6 +58,23 @@ import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 				<h4>OAuth2 con Spring Security</h4>
 				<p>
 					En este proyecto, he aprendido a usar OAuth2 con Spring Security para autenticar y autorizar a los usuarios en una aplicación Spring Boot.
+				</p>
+			</div>
+		</div>
+		<div class='galeria'>
+			<div class='proyecto'>
+				<!-- Proyecto 4:  -->				
+				<a href='https://github.com/CurtoBrull/GithubApiSpring' target='_blank'>
+					<Image src={gitHubUserDetails} alt='Imagen del proyecto GitHub User Activity App' width='300' loading='lazy' class='ghImage'/>
+					<div class='overlay'>
+						<h3>GitHub User Activity App</h3>
+						<p>La GitHub User Activity App es una aplicación web desarrollada con Spring Boot que permite buscar y visualizar información detallada sobre los usuarios de GitHub.</p>
+					</div>
+				</a>
+				<hr />
+				<h4>GitHub User Activity App alojado en Railway</h4>
+				<p>
+					La GitHub User Activity App es una aplicación web desarrollada con Spring Boot que permite buscar y visualizar información detallada sobre los usuarios de GitHub. Utilizando la API pública de GitHub, esta aplicación proporciona detalles como el nombre, ubicación, biografía, número de seguidores, repositorios públicos y más.
 				</p>
 			</div>
 		</div>
@@ -171,5 +192,10 @@ import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 
 	.astro-icon {
 		margin-left: 5px;
+	}
+
+	.ghImage {
+		padding: 0 50px;
+		background-color: #fff;
 	}
 </style>
