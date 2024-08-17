@@ -40,25 +40,9 @@
 				</div>
 			</div>
 		</div>
-		<button id='download-cv' class='btn primary'
-			>Descargar y ver el CV <i class='fa-solid fa-download'></i><span class='overlay'></span></button
-		>
+		<a href='/cv' class='btn primary'>Ver y Descargar el CV</a>
 	</div>
 </section>
-
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		const button = document.getElementById('download-cv');
-		if (button) {
-			button.addEventListener('click', function () {
-				const link = document.createElement('a');
-				link.href = '/cv/CV_Javier_Curto_Brull.pdf';
-				link.download = 'CV_Javier_Curto_Brull.pdf';
-				link.click();
-			});
-		}
-	});
-</script>
 
 <style>
 	.sobremi {
@@ -193,6 +177,24 @@
 
 	.sobremi button:hover .overlay {
 		width: 100%;
+	}
+
+	a.btn.primary {
+		margin-top: 20px;
+		background-color: var(--baseColor);
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+		display: block;
+		width: fit-content;
+		margin: 20px auto;
+		font-size: larger;
+	}
+
+	a.btn.primary:hover {
+		background-color: var(--secColor);
 	}
 
 	@media (max-width: 768px) {
