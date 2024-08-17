@@ -1,13 +1,20 @@
 ---
-
+import { Image } from 'astro:assets';
+import cv1 from '../assets/img/CV_Javier_Curto_Brull_page-0001.jpg';
+import cv2 from '../assets/img/CV_Javier_Curto_Brull_page-0002.jpg';
+import cv3 from '../assets/img/CV_Javier_Curto_Brull_page-0003.jpg';
 ---
 
 <section id='cvpage' class='cvpage'>
 	<div id='inicio' class='cv-content'>
 		<h1>Curriculum Vitae de Javier Curto</h1>
 
-		<embed src='/cv/CV_Javier_Curto_Brull.pdf' type='application/pdf' width='100%' height='600px' />
-
+		<div id="image-viewer" class='image-viewer'>
+			<Image src={cv1} alt='Retrato de Javier Curto Brull' alt='CV Page 1' class='cv-image' loading='eager' />
+			<Image src={cv2} alt='Retrato de Javier Curto Brull' alt='CV Page 2' class='cv-image' loading='lazy' />
+			<Image src={cv3} alt='Retrato de Javier Curto Brull' alt='CV Page 3' class='cv-image' loading='lazy' />
+		</div>
+		
 		<p>Si deseas descargar el CV, haz clic en el siguiente botón:</p>
 		<a href='/cv/CV_Javier_Curto_Brull.pdf' download class='btn primary'>Descargar CV</a>
 	</div>
@@ -69,5 +76,17 @@
 
 	.cv-content a.btn.primary:hover {
 		background-color: var(--secColor);
+	}
+
+	.image-viewer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.cv-image {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 20px;
 	}
 </style>
