@@ -1,7 +1,7 @@
 {
   "name": "astrojcb",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.2",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.13.3",
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.1",
     "astro-robots-txt": "^1.0.0",
     "astrojcb": "file:",
-    "tailwindcss": "^3.4.4",
-    "tailwindcss-animated": "^1.0.1",
-    "typescript": "^5.5.3"
+    "tailwindcss": "^4.1.8",
+    "tailwindcss-animated": "^2.0.0",
+    "typescript": "^5.8.3"
   }
 }
