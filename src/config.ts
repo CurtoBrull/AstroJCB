@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'Javier Curto';
 export const SITE_DESCRIPTION = 'Desarrollo de aplicaciones y páginas web';
-export const ICON = '/src/assets/img/jcb.png';
+export const ICON = '/img/favicon.png';
