@@ -100,24 +100,8 @@ import "../styles/global.css";
 	}
 </style>
 
-<script>
-	let menuVisible = false;
-
-	function mostrarOcultarMenu() {
-		const navElement = document.getElementById('nav');
-		if (navElement) {
-			navElement.classList.toggle('responsive');
-		}
-		menuVisible = !menuVisible;
-	}
-	(window as any).mostrarOcultarMenu = mostrarOcultarMenu;
-
-	function seleccionar() {
-		const navElement = document.getElementById('nav');
-		if (navElement) {
-			navElement.classList.remove('responsive');
-		}
-		menuVisible = false;
-	}
-	(window as any).seleccionar = seleccionar;
+<script type="module">
+        import { mostrarOcultarMenu, seleccionar } from '../scripts/navbar';
+        (window as any).mostrarOcultarMenu = mostrarOcultarMenu;
+        (window as any).seleccionar = seleccionar;
 </script>
