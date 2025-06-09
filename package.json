@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -18,5 +19,9 @@
     "tailwindcss": "^4.1.8",
     "tailwindcss-animated": "^2.0.0",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.3"
   }
 }
