@@ -101,7 +101,7 @@ import "../styles/global.css";
 </style>
 
 <script type="module">
-        import { mostrarOcultarMenu, seleccionar } from '../scripts/navbar';
-        (window as any).mostrarOcultarMenu = mostrarOcultarMenu;
-        (window as any).seleccionar = seleccionar;
+		import { mostrarOcultarMenu, seleccionar } from '../scripts/navbar';
+		window.mostrarOcultarMenu = mostrarOcultarMenu;
+		window.seleccionar = seleccionar;
 </script>
