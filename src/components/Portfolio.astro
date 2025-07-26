@@ -6,6 +6,9 @@ import astro from '../assets/img/astro.svg';
 import postmanPostCode from '../assets/img/postmanPOSTCode.png';
 import gitHubUserDetails from '../assets/img/GitHubUserDetails.png';
 import inventarioCongelador from '../assets/img/inventario-congelador.jpg';
+import generadorIdeasGemini from '../assets/img/generador-ideas-gemini.png';
+import noPokeForYou from '../assets/img/nopokeforyou.png';
+import groceryTicketAi from '../assets/img/groceryticketai.png';
 ---
 
 <section id='portfolio' class='portfolio'>
@@ -67,7 +70,7 @@ import inventarioCongelador from '../assets/img/inventario-congelador.jpg';
 			</div>
 		</div>
 		<div class='galeria'>
-			<div class='proyecto'>
+			<div class='proyecto alto no-hover'>
 				<!-- Proyecto 4: GithubApiSpring -->
 				<a href='https://github.com/CurtoBrull/GithubApiSpring' target='_blank'>
 					<Image
@@ -92,9 +95,15 @@ import inventarioCongelador from '../assets/img/inventario-congelador.jpg';
 					información detallada sobre los usuarios de GitHub. Utilizando la API pública de GitHub, esta aplicación
 					proporciona detalles como el nombre, ubicación, biografía, número de seguidores, repositorios públicos y más.
 				</p>
+				<div class='btn-container'>
+					<a href='https://githubapispring.onrender.com/' target='_blank' class='btn-vercel'>Ver app en Render</a>
+					<a href='https://github.com/CurtoBrull/GithubApiSpring' target='_blank' class='btn-github'
+						>Ver código en GitHub</a
+					>
+				</div>
 			</div>
 			<!-- Proyecto 5: Inventario del Congelador -->
-			<div class='proyecto no-hover'>
+			<div class='proyecto alto no-hover'>
 				<a href='https://github.com/CurtoBrull/congelador-inventario' target='_blank'>
 					<Image
 						src={inventarioCongelador}
@@ -117,6 +126,91 @@ import inventarioCongelador from '../assets/img/inventario-congelador.jpg';
 					<a href='https://github.com/CurtoBrull/congelador-inventario' target='_blank' class='btn-github'
 						>Ver código en GitHub</a
 					>
+				</div>
+			</div>
+			<!-- Proyecto 6: NoPokeForYou -->
+			<div class='proyecto alto no-hover'>
+				<a href='https://github.com/CurtoBrull/NoPokeForYou' target='_blank'>
+					<Image src={noPokeForYou} alt='Imagen del proyecto NoPokeForYou' width='300' loading='lazy' />
+					<div class='overlay'>
+						<h3>NoPokeForYou</h3>
+						<p>
+							App web fullstack (React + Spring Boot) para buscar Pokémon, pero el backend responde con un Pokémon
+							diferente usando Gemini AI (modo troll). Si insistes, quizás puedas llegar a ver el real.
+						</p>
+					</div>
+				</a>
+				<hr />
+				<h4>NoPokeForYou</h4>
+				<p>
+					¿Quieres buscar un Pokémon? ¡Esta app te lo pone difícil! Cuando buscas un Pokémon, el backend responde con
+					otro diferente y un mensaje troll generado por Gemini AI de Google. Si insistes, puedes ver el Pokémon real.
+					Incluye frontend en React + TailwindCSS y backend en Spring Boot, ambos desplegados en Render.<br />
+					<strong>Ejemplo de uso:</strong> Buscas "Pikachu" → la app te da otro Pokémon y un mensaje divertido. Si insistes,
+					puedes ver el resultado real.<br />
+				</p>
+				<div class='btn-container'>
+					<a href='https://nopokeforyou-front.onrender.com/' target='_blank' class='btn-vercel'>Ver app en Render</a>
+					<a href='https://github.com/CurtoBrull/NoPokeForYou' target='_blank' class='btn-github'
+						>Ver código en GitHub</a
+					>
+				</div>
+			</div>
+			<!-- Proyecto 7: Generador de Ideas Gemini -->
+			<div class='proyecto alto no-hover'>
+				<a href='https://github.com/CurtoBrull/generador-ideas-gemini' target='_blank'>
+					<Image
+						src={generadorIdeasGemini}
+						alt='Imagen del proyecto Generador de Ideas Gemini'
+						width='300'
+						loading='lazy'
+					/>
+					<div class='overlay'>
+						<h3>Generador de Ideas Gemini</h3>
+						<p>
+							Aplicación web que utiliza la API de Gemini para generar ideas creativas a partir de un prompt del
+							usuario. Desarrollada con Next.js y TypeScript.
+						</p>
+					</div>
+				</a>
+				<hr />
+				<h4>Generador de Ideas Gemini</h4>
+				<p>
+					Este proyecto permite a los usuarios obtener ideas originales y creativas usando la inteligencia artificial de
+					Gemini. El usuario introduce un prompt y la app genera una respuesta creativa en segundos.<br />
+					Desarrollado con Python, Gradio y desplegado en Render.<br />
+				</p>
+				<div class='btn-container'>
+					<a href='https://generador-ideas-gemini.onrender.com/' target='_blank' class='btn-vercel'>Ver app en Render</a
+					>
+					<a href='https://github.com/CurtoBrull/generador-ideas-gemini' target='_blank' class='btn-github'
+						>Ver código en GitHub</a
+					>
+				</div>
+			</div>
+			<!-- Proyecto 8: grocery-ticket-ai -->
+			<div class='proyecto alto no-hover'>
+				<a href='https://grocery-ticket-ai.vercel.app/' target='_blank'>
+					<Image src={groceryTicketAi} alt='Imagen del proyecto grocery-ticket-ai' width='300' loading='lazy' />
+					<div class='overlay'>
+						<h3>Grocery Ticket AI</h3>
+						<p>
+							Procesador IA de Tickets de Compra. Sube una foto o PDF de tu ticket y la app extrae automáticamente
+							supermercado, fecha, hora, total y productos usando OCR (Tesseract.js) y Gemini. Interfaz moderna y
+							responsive.
+						</p>
+					</div>
+				</a>
+				<hr />
+				<h4>Grocery Ticket AI</h4>
+				<p>
+					Sube una foto o PDF de tu ticket de compra y la app extrae supermercado, fecha, total y productos usando IA
+					(OCR + Gemini). Todo organizado y editable al instante.<br />
+					Los tickets y productos se almacenan en una base de datos Supabase, permitiendo buscador y listado de tickets por
+					supermercado.
+				</p>
+				<div class='btn-container'>
+					<a href='https://grocery-ticket-ai.vercel.app/' target='_blank' class='btn-vercel'>Ver app en Vercel</a>
 				</div>
 			</div>
 		</div>
@@ -158,15 +252,28 @@ import inventarioCongelador from '../assets/img/inventario-congelador.jpg';
 	.portfolio .galeria .proyecto {
 		position: relative;
 		max-width: 340px;
-		height: fit-content;
+		height: 100%;
 		margin: 10px;
 		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.portfolio .galeria .proyecto.alto {
+		min-height: 700px; /* Solo para los que lo necesiten */
+	}
+
+	.portfolio .galeria .proyecto > .btn-container {
+		margin-top: auto;
 	}
 
 	.portfolio .galeria .proyecto img {
 		width: 100%;
 		height: 250px;
 		display: block;
+		object-fit: contain;
+		object-position: center;
+		border-radius: 8px;
 	}
 
 	/* Overlay común para todos los proyectos */
