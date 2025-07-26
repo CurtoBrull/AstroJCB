@@ -1,3 +1,10 @@
+// Declaraciones globales para evitar warnings de TypeScript por window.seleccionar y window.mostrarOcultarMenu
+declare global {
+  interface Window {
+    seleccionar: typeof seleccionar;
+    mostrarOcultarMenu: typeof mostrarOcultarMenu;
+  }
+}
 let menuVisible = false;
 
 export function mostrarOcultarMenu(): void {
